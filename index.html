@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fibra Óptica Querétaro - Contrataciones Inmediatas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Fibra Óptica Querétaro - Alta Velocidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
         }
 
         body {
-            background: #f4f7f6;
+            background: #eef2f7;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,106 +27,173 @@
             width: 100%;
             max-width: 450px;
             min-height: 100vh;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
             display: flex;
             flex-direction: column;
             position: relative;
+            overflow: hidden;
         }
 
+        /* Encabezado de Cobertura */
         .alert-header {
-            background: #0056b3;
-            color: white;
+            background: #002d72; /* Azul Megacable Oscuro */
+            color: #00d2ff;
             text-align: center;
             padding: 10px;
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #0056b3;
         }
 
-        .main-content {
-            padding: 30px 20px;
+        /* Sección Hero (Impacto Visual) */
+        .hero-section {
+            background: linear-gradient(135deg, #003399 0%, #001f66 100%);
+            color: white;
+            padding: 40px 24px 30px 24px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-grow: 1;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: relative;
+        }
+
+        /* Imagen/Icono de Conectividad */
+        .hero-image {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0px 4px 10px rgba(0,210,255,0.3));
         }
 
         .title {
-            font-size: 24px;
-            color: #111;
-            margin-bottom: 15px;
-            line-height: 1.3;
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
         }
 
         .subtitle {
             font-size: 14px;
-            color: #666;
-            margin-bottom: 25px;
+            color: #b3d1ff;
+            line-height: 1.4;
+            font-weight: 400;
         }
 
+        /* Contenido de Ofertas */
+        .main-content {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ffffff;
+        }
+
+        /* Tarjeta de Promoción Rediseñada */
         .promo-card {
-            background: #f8fafd;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 30px;
+            background: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 20px;
+            padding: 24px;
+            width: 100%;
+            margin-bottom: 25px;
             position: relative;
+            box-shadow: 0px 8px 20px rgba(0, 51, 153, 0.06);
         }
 
         .badge {
-            background: #ffc107;
-            color: #000;
+            background: #ffcc00; /* Oro Promocional */
+            color: #001f66;
             font-size: 11px;
             font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 20px;
+            padding: 5px 14px;
+            border-radius: 50px;
             position: absolute;
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
+            box-shadow: 0px 4px 10px rgba(255,204,0,0.3);
         }
 
         .promo-card h2 {
-            font-size: 20px;
-            margin-top: 5px;
+            font-size: 22px;
+            color: #003399;
+            font-weight: 700;
+            text-align: center;
         }
 
         .price {
-            font-size: 16px;
-            margin: 10px 0;
-            color: #555;
+            font-size: 15px;
+            margin: 12px 0;
+            color: #666;
+            text-align: center;
         }
 
         .price span {
-            color: #28a745;
-            font-size: 24px;
-            font-weight: 700;
+            color: #2ed573; /* Verde Éxito */
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e1e8ed;
+            margin: 15px 0;
         }
 
         .benefits {
             text-align: left;
             list-style: none;
-            margin-top: 15px;
         }
 
         .benefits li {
-            font-size: 13px;
-            margin-bottom: 8px;
-            color: #444;
+            font-size: 13.5px;
+            margin-bottom: 10px;
+            color: #4c566a;
+            display: flex;
+            align-items: center;
         }
 
+        .benefits li::before {
+            content: "✓";
+            color: #2ed573;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        /* Botón de WhatsApp con Animación */
         .cta-button {
             background: #25d366;
             color: white;
             text-decoration: none;
-            padding: 16px;
-            border-radius: 30px;
+            padding: 18px;
+            border-radius: 50px;
             font-weight: 700;
             font-size: 16px;
-            box-shadow: 0px 5px 15px rgba(37, 211, 102, 0.4);
-            transition: transform 0.2s;
+            letter-spacing: 0.2px;
+            box-shadow: 0px 6px 20px rgba(37, 211, 102, 0.4);
+            width: 100%;
+            text-align: center;
             display: block;
-            margin-top: 10px;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+            70% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
 
         .cta-button:active {
@@ -135,8 +202,9 @@
 
         .footer-note {
             font-size: 11px;
-            color: #999;
+            color: #a0aec0;
             margin-top: 15px;
+            text-align: center;
         }
     </style>
 </head>
@@ -144,30 +212,39 @@
 
     <div class="landing-container">
         <header class="alert-header">
-            <p>🏠 Cobertura garantizada en zonas residenciales de Querétaro y Corregidora</p>
+            📍 COBERTURA EN QUERÉTARO Y CORREGIDORA
         </header>
 
-        <main class="main-content">
-            <h1 class="title">¿Te acabas de mudar y necesitas Internet ya?</h1>
-            <p class="subtitle">Olvídate de trámites lentos y contestadores automáticos. Te conectamos con la mayor velocidad de fibra óptica en tiempo récord.</p>
+        <section class="hero-section">
+            <svg class="hero-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 22 2 12 2ZM13 19H11V15H13V19ZM13 13H11V7H13V13Z" fill="#00d2ff"/>
+                <path d="M12 6C15.31 6 18 8.69 18 12C18 13.28 17.6 14.47 16.92 15.46L15.46 14C15.8 13.41 16 12.73 16 12C16 9.79 14.21 8 12 8C11.27 8 10.59 8.2 10 8.54L8.54 7.08C9.53 6.4 10.72 6 12 6Z" fill="#ffffff"/>
+            </svg>
+            <h1 class="title">¿Estrenando casa en Querétaro?</h1>
+            <p class="subtitle">Conéctate hoy mismo con la Fibra Óptica más rápida, estable y económica de la ciudad.</p>
+        </section>
 
+        <main class="main-content">
             <div class="promo-card">
-                <span class="badge">PROMO DE MUDANZA</span>
-                <h2>Paquete 200 Megas</h2>
-                <p class="price">Activa tu servicio con solo <span>$100 MXN</span></p>
+                <span class="badge">EXCLUSIVO MUDANZAS</span>
+                <h2>Paquete Conectado</h2>
+                <div class="price">Desde solo <span>$100 MXN</span> al contratar</div>
+                
+                <div class="divider"></div>
                 
                 <ul class="benefits">
-                    <li>⚡ Fibra Óptica simétrica y estable</li>
-                    <li>🛠️ Instalación rápida en tu domicilio</li>
-                    <li>📉 Sin letras chiquitas ni trámites eternos</li>
+                    <li>Velocidad de hasta 200 Megas</li>
+                    <li>Fibra Óptica directa a tu domicilio</li>
+                    <li>Ideal para Home Office y Streaming HD</li>
+                    <li>Soporte técnico preferencial</li>
                 </ul>
             </div>
 
             <a href="https://api.whatsapp.com/send?phone=524464044521" class="cta-button" target="_blank">
-                💬 Verificar Cobertura por WhatsApp
+                ⚡ Consultar Cobertura Aquí
             </a>
             
-            <p class="footer-note">Al hacer clic, nuestro asistente virtual revisará tus calles de inmediato.</p>
+            <p class="footer-note">Un asesor virtual verificará tus calles en menos de 2 minutos.</p>
         </main>
     </div>
 
