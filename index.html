@@ -1,252 +1,310 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fibra Óptica Querétaro - Alta Velocidad</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Megacable Querétaro | Contrata Internet de Fibra Óptica</title><meta name="description" content="Contrata Internet Megacable en Querétaro. Instalación rápida, fibra óptica, TV Xview y llamadas ilimitadas."><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"><style>
 
-        body {
-            background: #eef2f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: #333;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-        .landing-container {
-            background: #ffffff;
-            width: 100%;
-            max-width: 450px;
-            min-height: 100vh;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
-        }
+body{
+background:#edf2f7;
+color:#222;
+}
 
-        /* Encabezado de Cobertura */
-        .alert-header {
-            background: #002d72; /* Azul Megacable Oscuro */
-            color: #00d2ff;
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid #0056b3;
-        }
+.container{
+max-width:520px;
+margin:auto;
+background:#fff;
+min-height:100vh;
+box-shadow:0 0 30px rgba(0,0,0,.12);
+}
 
-        /* Sección Hero (Impacto Visual) */
-        .hero-section {
-            background: linear-gradient(135deg, #003399 0%, #001f66 100%);
-            color: white;
-            padding: 40px 24px 30px 24px;
-            text-align: center;
-            border-bottom-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            position: relative;
-        }
+.top-bar{
+background:#002d72;
+color:white;
+padding:12px;
+text-align:center;
+font-size:13px;
+font-weight:700;
+}
 
-        /* Imagen/Icono de Conectividad */
-        .hero-image {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 15px;
-            filter: drop-shadow(0px 4px 10px rgba(0,210,255,0.3));
-        }
+.hero{
+background:linear-gradient(135deg,#003399,#001f66);
+color:white;
+padding:35px 22px;
+text-align:center;
+}
 
-        .title {
-            font-size: 26px;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 12px;
-            color: #ffffff;
-            text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-        }
+.hero-badge{
+display:inline-block;
+background:#ffcc00;
+color:#001f66;
+padding:8px 16px;
+border-radius:50px;
+font-size:12px;
+font-weight:700;
+margin-bottom:18px;
+}
 
-        .subtitle {
-            font-size: 14px;
-            color: #b3d1ff;
-            line-height: 1.4;
-            font-weight: 400;
-        }
+.hero h1{
+font-size:32px;
+line-height:1.15;
+font-weight:800;
+margin-bottom:15px;
+}
 
-        /* Contenido de Ofertas */
-        .main-content {
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #ffffff;
-        }
+.hero p{
+font-size:15px;
+line-height:1.6;
+opacity:.95;
+}
 
-        /* Tarjeta de Promoción Rediseñada */
-        .promo-card {
-            background: #ffffff;
-            border: 1px solid #e1e8ed;
-            border-radius: 20px;
-            padding: 24px;
-            width: 100%;
-            margin-bottom: 25px;
-            position: relative;
-            box-shadow: 0px 8px 20px rgba(0, 51, 153, 0.06);
-        }
+.hero img{
+width:100%;
+border-radius:18px;
+margin-top:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
 
-        .badge {
-            background: #ffcc00; /* Oro Promocional */
-            color: #001f66;
-            font-size: 11px;
-            font-weight: 700;
-            padding: 5px 14px;
-            border-radius: 50px;
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            box-shadow: 0px 4px 10px rgba(255,204,0,0.3);
-        }
+.content{
+padding:25px;
+}
 
-        .promo-card h2 {
-            font-size: 22px;
-            color: #003399;
-            font-weight: 700;
-            text-align: center;
-        }
+.alert-box{
+background:#fff8e1;
+border-left:5px solid #ffcc00;
+padding:15px;
+border-radius:12px;
+margin-bottom:25px;
+}
 
-        .price {
-            font-size: 15px;
-            margin: 12px 0;
-            color: #666;
-            text-align: center;
-        }
+.alert-box h3{
+margin-bottom:8px;
+font-size:18px;
+}
 
-        .price span {
-            color: #2ed573; /* Verde Éxito */
-            font-size: 28px;
-            font-weight: 800;
-        }
+.alert-box p{
+font-size:14px;
+line-height:1.6;
+}
 
-        .divider {
-            height: 1px;
-            background: #e1e8ed;
-            margin: 15px 0;
-        }
+.offer-card{
+background:white;
+border-radius:20px;
+padding:25px;
+border:1px solid #edf0f5;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-bottom:25px;
+}
 
-        .benefits {
-            text-align: left;
-            list-style: none;
-        }
+.offer-title{
+text-align:center;
+font-size:24px;
+font-weight:800;
+color:#003399;
+margin-bottom:10px;
+}
 
-        .benefits li {
-            font-size: 13.5px;
-            margin-bottom: 10px;
-            color: #4c566a;
-            display: flex;
-            align-items: center;
-        }
+.price{
+text-align:center;
+margin-bottom:18px;
+}
 
-        .benefits li::before {
-            content: "✓";
-            color: #2ed573;
-            font-weight: bold;
-            margin-right: 10px;
-            font-size: 16px;
-        }
+.price span{
+font-size:44px;
+font-weight:800;
+color:#2ecc71;
+}
 
-        /* Botón de WhatsApp con Animación */
-        .cta-button {
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 18px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 16px;
-            letter-spacing: 0.2px;
-            box-shadow: 0px 6px 20px rgba(37, 211, 102, 0.4);
-            width: 100%;
-            text-align: center;
-            display: block;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        }
+.price small{
+display:block;
+font-size:14px;
+color:#666;
+}
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-            }
-            70% {
-                transform: scale(1.02);
-                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
+.features{
+list-style:none;
+}
 
-        .cta-button:active {
-            transform: scale(0.98);
-        }
+.features li{
+padding:10px 0;
+border-bottom:1px solid #f0f0f0;
+font-size:15px;
+}
 
-        .footer-note {
-            font-size: 11px;
-            color: #a0aec0;
-            margin-top: 15px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+.features li:last-child{
+border-bottom:none;
+}
 
-    <div class="landing-container">
-        <header class="alert-header">
-            📍 COBERTURA EN QUERÉTARO Y CORREGIDORA
-        </header>
+.bonus{
+background:#eafaf1;
+padding:15px;
+border-radius:12px;
+margin-top:18px;
+text-align:center;
+font-weight:700;
+color:#1e8449;
+}
 
-        <section class="hero-section">
-            <svg class="hero-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 22 2 12 2ZM13 19H11V15H13V19ZM13 13H11V7H13V13Z" fill="#00d2ff"/>
-                <path d="M12 6C15.31 6 18 8.69 18 12C18 13.28 17.6 14.47 16.92 15.46L15.46 14C15.8 13.41 16 12.73 16 12C16 9.79 14.21 8 12 8C11.27 8 10.59 8.2 10 8.54L8.54 7.08C9.53 6.4 10.72 6 12 6Z" fill="#ffffff"/>
-            </svg>
-            <h1 class="title">¿Estrenando casa en Querétaro?</h1>
-            <p class="subtitle">Conéctate hoy mismo con la Fibra Óptica más rápida, estable y económica de la ciudad.</p>
-        </section>
+.cta{
+display:block;
+text-decoration:none;
+background:#25D366;
+color:white;
+padding:20px;
+border-radius:60px;
+text-align:center;
+font-size:18px;
+font-weight:800;
+box-shadow:0 8px 25px rgba(37,211,102,.40);
+animation:pulse 2s infinite;
+}
 
-        <main class="main-content">
-            <div class="promo-card">
-                <span class="badge">EXCLUSIVO MUDANZAS</span>
-                <h2>Paquete Conectado</h2>
-                <div class="price">Desde solo <span>$100 MXN</span> al contratar</div>
-                
-                <div class="divider"></div>
-                
-                <ul class="benefits">
-                    <li>Velocidad de hasta 200 Megas</li>
-                    <li>Fibra Óptica directa a tu domicilio</li>
-                    <li>Ideal para Home Office y Streaming HD</li>
-                    <li>Soporte técnico preferencial</li>
-                </ul>
-            </div>
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.03);}
+100%{transform:scale(1);}
+}
 
-            <a href="https://api.whatsapp.com/send?phone=524464044521" class="cta-button" target="_blank">
-                ⚡ Consultar Cobertura Aquí
-            </a>
-            
-            <p class="footer-note">Un asesor virtual verificará tus calles en menos de 2 minutos.</p>
-        </main>
-    </div>
+.urgency{
+text-align:center;
+margin-top:18px;
+color:#d63031;
+font-weight:700;
+}
+
+.counter{
+text-align:center;
+margin-top:8px;
+font-size:14px;
+color:#666;
+}
+
+.testimonials{
+margin-top:28px;
+}
+
+.testimonials h2{
+text-align:center;
+color:#003399;
+margin-bottom:18px;
+}
+
+.review{
+background:#f8fafc;
+padding:15px;
+border-radius:12px;
+margin-bottom:12px;
+border:1px solid #edf2f7;
+}
+
+.review strong{
+display:block;
+margin-top:8px;
+}
+
+.trust{
+margin-top:25px;
+background:#f7f9fc;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.trust h3{
+color:#003399;
+margin-bottom:10px;
+}
+
+.footer{
+padding:25px;
+text-align:center;
+font-size:12px;
+color:#777;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(37,211,102,.45);
+z-index:999;
+}
+
+</style></head><body><div class="container"><div class="top-bar">
+📍 Cobertura en Querétaro • Corregidora • El Marqués
+</div><section class="hero"><div class="hero-badge">
+🚚 PROMOCIÓN ESPECIAL PARA NUEVOS INQUILINOS
+</div><h1>
+¿Te acabas de mudar a una casa o departamento?
+</h1><p>
+Conecta tu nuevo hogar con Internet de Fibra Óptica de alta velocidad.
+Contrata en minutos y agenda tu instalación por WhatsApp.
+</p><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" alt="Nuevo hogar"></section><div class="content"><div class="alert-box">
+<h3>⚠️ Evita quedarte sin internet</h3>
+<p>
+Después de una mudanza lo último que necesitas es perder tiempo buscando opciones.
+Nosotros te ayudamos a verificar cobertura y contratar de forma rápida.
+</p>
+</div><div class="offer-card"><div class="offer-title">
+🎁 Paquete Destacado
+</div><div class="price">
+<span>$100</span>
+<small>para contratar</small>
+</div><ul class="features">
+<li>🌐 Internet 200 Megas</li>
+<li>📺 TV Xview con 170 canales</li>
+<li>📞 Llamadas ilimitadas</li>
+<li>🚀 Instalación rápida</li>
+<li>❌ Sin costo de instalación</li>
+<li>🏠 Ideal para casas y departamentos</li>
+</ul><div class="bonus">
+🎁 Beneficios especiales vigentes al momento de contratar
+</div></div><a
+class="cta"
+href="https://wa.me/524464044521?text=Hola,%20me%20acabo%20de%20mudar%20y%20quiero%20verificar%20cobertura%20de%20Megacable."
+target="_blank">
+🟢 QUIERO INTERNET HOY
+</a>
+
+<div class="urgency">
+🔥 Promoción disponible por tiempo limitado
+</div><div class="counter">
+⏰ Agenda tu instalación por WhatsApp
+</div><div class="testimonials"><h2>⭐⭐⭐⭐⭐ Clientes satisfechos</h2><div class="review">
+Me ayudaron a contratar muy rápido después de mudarme.
+<strong>Cliente de Querétaro</strong>
+</div><div class="review">
+La instalación fue sencilla y la atención por WhatsApp fue excelente.
+<strong>Cliente de Corregidora</strong>
+</div><div class="review">
+Todo el proceso fue rápido y resolvieron mis dudas.
+<strong>Cliente de El Marqués</strong>
+</div></div><div class="trust"><h3>👨‍💼 Atención personalizada</h3><p>
+Asesoría para contratación de servicios Megacable.
+Verificación de cobertura, información de paquetes y seguimiento por WhatsApp.
+</p></div></div><div class="footer">
+Sitio informativo para promoción y contratación de servicios Megacable en Querétaro.
+</div></div><a
+class="whatsapp-float"
+href="https://wa.me/524464044521?text=Hola,%20quiero%20información%20sobre%20Megacable."
+target="_blank">
+💬
+</a>
 
 </body>
 </html>
