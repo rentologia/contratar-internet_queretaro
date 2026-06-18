@@ -1,331 +1,321 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Megacable Querétaro | Contrata Internet de Fibra Óptica</title><meta name="description" content="Contrata Internet Megacable en Querétaro. Instalación rápida, fibra óptica, TV Xview y llamadas ilimitadas."><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"><style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrata Internet en Querétaro - Fibra Óptica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+        body {
+            background: #070b19;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ffffff;
+        }
 
-body{
-background:#edf2f7;
-color:#222;
-}
+        .landing-container {
+            background: #001a4d; /* Azul Megacable Profundo para todo el fondo */
+            width: 100%;
+            max-width: 450px;
+            min-height: 100vh;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
 
-.container{
-max-width:520px;
-margin:auto;
-background:#fff;
-min-height:100vh;
-box-shadow:0 0 30px rgba(0,0,0,.12);
-}
+        /* Barra de Urgencia/Escasez (Gatillo Mental) */
+        .urgency-bar {
+            background: #ffcc00; /* Oro Promocional */
+            color: #001f66;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
 
-.top-bar{
-background:#002d72;
-color:white;
-padding:12px;
-text-align:center;
-font-size:13px;
-font-weight:700;
-}
+        /* Hero: Alivio al Dolor */
+        .hero-section {
+            background: linear-gradient(180deg, #002d72 0%, #001a4d 100%);
+            color: white;
+            padding: 40px 24px 25px 24px;
+            text-align: center;
+        }
 
-.hero{
-background:linear-gradient(135deg,#003399,#001f66);
-color:white;
-padding:35px 22px;
-text-align:center;
-}
+        .hero-badge {
+            background: rgba(0, 210, 255, 0.2);
+            color: #00d2ff;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 210, 255, 0.4);
+        }
 
-.hero-badge{
-display:inline-block;
-background:#ffcc00;
-color:#001f66;
-padding:8px 16px;
-border-radius:50px;
-font-size:12px;
-font-weight:700;
-margin-bottom:18px;
-}
+        .title {
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
 
-.hero h1{
-font-size:32px;
-line-height:1.15;
-font-weight:800;
-margin-bottom:15px;
-}
+        .subtitle {
+            font-size: 14px;
+            color: #93c5fd; /* Azul claro para legibilidad */
+            line-height: 1.5;
+            font-weight: 400;
+        }
 
-.hero p{
-font-size:15px;
-line-height:1.6;
-opacity:.95;
-}
+        /* Cuerpo principal */
+        .main-content {
+            padding: 20px 24px 40px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            background: #00153b; /* Interior del contenedor más oscuro para contraste */
+        }
 
-.hero img{
-width:100%;
-border-radius:18px;
-margin-top:25px;
-box-shadow:0 10px 25px rgba(0,0,0,.25);
-}
+        /* Tarjeta de Decisión llamativa con interior Azul */
+        .decision-card {
+            background: #002561; /* Azul Megacable Eléctrico en el interior */
+            border: 2px solid #0052cc;
+            border-radius: 24px;
+            padding: 28px 24px;
+            width: 100%;
+            margin-bottom: 30px;
+            position: relative;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+        }
 
-.content{
-padding:25px;
-}
+        .pop-badge {
+            background: #2ed573; /* Verde Éxito */
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 50px;
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 4px 12px rgba(46, 213, 115, 0.4);
+        }
 
-.alert-box{
-background:#fff8e1;
-border-left:5px solid #ffcc00;
-padding:15px;
-border-radius:12px;
-margin-bottom:25px;
-}
+        .decision-card h2 {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: 800;
+            text-align: center;
+        }
 
-.alert-box h3{
-margin-bottom:8px;
-font-size:18px;
-}
+        .price-tag {
+            text-align: center;
+            margin: 15px 0;
+        }
 
-.alert-box p{
-font-size:14px;
-line-height:1.6;
-}
+        .price-sub {
+            font-size: 12px;
+            color: #93c5fd;
+            display: block;
+            margin-bottom: 4px;
+        }
 
-.offer-card{
-background:white;
-border-radius:20px;
-padding:25px;
-border:1px solid #edf0f5;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-margin-bottom:25px;
-}
+        .price-main {
+            color: #ffcc00; /* Destaca el precio en Oro */
+            font-size: 36px;
+            font-weight: 800;
+        }
 
-.offer-title{
-text-align:center;
-font-size:24px;
-font-weight:800;
-color:#003399;
-margin-bottom:10px;
-}
+        .price-main span {
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 400;
+        }
 
-.price{
-text-align:center;
-margin-bottom:18px;
-}
+        .divider {
+            height: 1px;
+            background: #003b99;
+            margin: 18px 0;
+        }
 
-.price span{
-font-size:44px;
-font-weight:800;
-color:#2ecc71;
-}
+        /* Lista de beneficios orientados al cerebro reptiliano */
+        .neuro-benefits {
+            list-style: none;
+        }
 
-.price small{
-display:block;
-font-size:14px;
-color:#666;
-}
+        .neuro-benefits li {
+            font-size: 14px;
+            margin-bottom: 14px;
+            color: #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.4;
+        }
 
-.features{
-list-style:none;
-}
+        .neuro-benefits li strong {
+            color: #67e8f9; /* Azul cian eléctrico para resaltar textos clave */
+        }
 
-.features li{
-padding:10px 0;
-border-bottom:1px solid #f0f0f0;
-font-size:15px;
-}
+        .icon-check {
+            color: #2ed573;
+            font-weight: 900;
+            margin-right: 12px;
+            font-size: 16px;
+        }
 
-.features li:last-child{
-border-bottom:none;
-}
+        /* CONTENEDOR DE BOTONES (NEUROMARKETING DE SELECCIÓN FÁCIL) */
+        .buttons-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
 
-.bonus{
-background:#eafaf1;
-padding:15px;
-border-radius:12px;
-margin-top:18px;
-text-align:center;
-font-weight:700;
-color:#1e8449;
-}
+        /* Estilo base para los botones magnéticos */
+        .cta-button {
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ease;
+            animation: pulseWave 2.5s infinite;
+        }
 
-.cta{
-display:block;
-text-decoration:none;
-background:#25D366;
-color:white;
-padding:20px;
-border-radius:60px;
-text-align:center;
-font-size:18px;
-font-weight:800;
-box-shadow:0 8px 25px rgba(37,211,102,.40);
-animation:pulse 2s infinite;
-}
+        /* Botón 1: WhatsApp Express */
+        .btn-whatsapp {
+            background: #25d366;
+            box-shadow: 0px 8px 25px rgba(37, 211, 102, 0.35);
+        }
 
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.03);}
-100%{transform:scale(1);}
-}
+        /* Botón 2: Visita Física */
+        .btn-physical {
+            background: #0052cc;
+            border: 2px solid #0080ff;
+            box-shadow: 0px 8px 25px rgba(0, 82, 204, 0.4);
+            animation-delay: 0.6s;
+        }
 
-.urgency{
-text-align:center;
-margin-top:18px;
-color:#d63031;
-font-weight:700;
-}
+        @keyframes pulseWave {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
 
-.counter{
-text-align:center;
-margin-top:8px;
-font-size:14px;
-color:#666;
-}
+        .cta-button:active {
+            transform: scale(0.98);
+        }
 
-.testimonials{
-margin-top:28px;
-}
+        /* Sección de respaldo antibloqueo */
+        .backup-section {
+            text-align: center;
+            margin-top: 25px;
+            border-top: 1px dashed #003b99;
+            padding-top: 20px;
+        }
 
-.testimonials h2{
-text-align:center;
-color:#003399;
-margin-bottom:18px;
-}
+        .backup-section p {
+            font-size: 13px;
+            color: #93c5fd;
+        }
 
-.review{
-background:#f8fafc;
-padding:15px;
-border-radius:12px;
-margin-bottom:12px;
-border:1px solid #edf2f7;
-}
+        .backup-link {
+            color: #25d366;
+            text-decoration: underline;
+            font-weight: 600;
+        }
 
-.review strong{
-display:block;
-margin-top:8px;
-}
+        .footer-secure {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
-.trust{
-margin-top:25px;
-background:#f7f9fc;
-padding:20px;
-border-radius:15px;
-text-align:center;
-}
+    <div class="landing-container">
+        <div class="urgency-bar">
+            ⚡ Instalaciones disponibles hoy en Querétaro y Corregidora
+        </div>
 
-.trust h3{
-color:#003399;
-margin-bottom:10px;
-}
+        <section class="hero-section">
+            <span class="hero-badge">Trámite 100% Seguro</span>
+            <h1 class="title">¿Estrenando casa? No te quedes sin internet</h1>
+            <p class="subtitle">Conéctate hoy mismo con Fibra Óptica de alta velocidad, sin contratos aburridos ni filas eternas.</p>
+        </section>
 
-.footer{
-padding:25px;
-text-align:center;
-font-size:12px;
-color:#777;
-}
+        <main class="main-content">
+            <div class="decision-card">
+                <span class="pop-badge">PROMOCIÓN EXCLUSIVA</span>
+                <h2>Paquete Alta Velocidad</h2>
+                
+                <div class="price-tag">
+                    <span class="price-sub">Suscripción e instalación desde</span>
+                    <span class="price-main">$100 <span>MXN</span></span>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <ul class="neuro-benefits">
+                    <li><span class="icon-check">✓</span> <span><strong>Hasta 200 Megas:</strong> Navega, trabaja en home office y transmite películas sin cortes.</span></li>
+                    <li><span class="icon-check">✓</span> <span><strong>Fibra Óptica Directa:</strong> Máxima estabilidad garantizada en tu colonia.</span></li>
+                    <li><span class="icon-check">✓</span> <span><strong>Validación Express:</strong> Revisamos tus calles al instante sin perder tiempo.</span></li>
+                </ul>
+            </div>
 
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-text-decoration:none;
-box-shadow:0 8px 20px rgba(37,211,102,.45);
-z-index:999;
-}
+            <div class="buttons-container">
+                
+                <a href="https://api.whatsapp.com/send?phone=524464044521&text=Hola,%20quiero%20validar%20cobertura%20y%20hacer%20mi%20contrato%20por%20WhatsApp." class="cta-button btn-whatsapp" target="_blank">
+                    ⚡ Contratar Express por WhatsApp
+                </a>
 
-</style></head><body><div class="container"><div class="top-bar">
-📍 Cobertura en Querétaro • Corregidora • El Marqués
-</div><section class="hero"><div class="hero-badge">
-🚚 PROMOCIÓN ESPECIAL PARA NUEVOS INQUILINOS
-</div><h1>
-¿Te acabas de mudar a una casa o departamento?
-</h1><p>
-Conecta tu nuevo hogar con Internet de Fibra Óptica de alta velocidad.
-Contrata en minutos y agenda tu instalación por WhatsApp.
-</p><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" alt="Nuevo hogar"></section><div class="content"><div class="alert-box">
-<h3>⚠️ Evita quedarte sin internet</h3>
-<p>
-Después de una mudanza lo último que necesitas es perder tiempo buscando opciones.
-Nosotros te ayudamos a verificar cobertura y contratar de forma rápida.
-</p>
-</div><div class="offer-card"><div class="offer-title">
-🎁 Paquete Destacado
-</div><div class="price">
-<span>$100</span>
-<small>para contratar</small>
-</div><ul class="features">
-<li>🌐 Internet 200 Megas</li>
-<li>📺 TV Xview con 170 canales</li>
-<li>📞 Llamadas ilimitadas</li>
-<li>🚀 Instalación rápida</li>
-<li>❌ Sin costo de instalación</li>
-<li>🏠 Ideal para casas y departamentos</li>
-</ul><div class="bonus">
-🎁 Beneficios especiales vigentes al momento de contratar
-</div></div><a
-class="cta"
-<div style="width: 100%; display: flex; flex-direction: column; gap: 15px;">
+                <a href="https://api.whatsapp.com/send?phone=524464044521&text=Hola,%20quiero%20agendar%20una%20visita%20para%20que%20me%20hagan%20mi%20contrato%20en%20mi%20casa." class="cta-button btn-physical" target="_blank">
+                    🏠 Quiero mi Contrato en mi Casa (Físico)
+                </a>
 
-    <a href="https://api.whatsapp.com/send?phone=524464044521&text=Hola,%20quiero%20validar%20cobertura%20y%20hacer%20mi%20contrato%20por%20WhatsApp." class="cta-magnetic" target="_blank" style="background: #25d366; box-shadow: 0px 6px 20px rgba(37, 211, 102, 0.3);">
-        ⚡ Contratar Express por WhatsApp
-    </a>
+            </div>
 
-    <a href="https://api.whatsapp.com/send?phone=524464044521&text=Hola,%20quiero%20agendar%20una%20visita%20para%20que%20me%20hagan%20mi%20contrato%20en%20mi%20casa." class="cta-magnetic" target="_blank" style="background: #002d72; box-shadow: 0px 6px 20px rgba(0, 45, 114, 0.3); animation-delay: 0.5s;">
-        🏠 Quiero mi Contrato en mi Casa (Físico)
-    </a>
-
-</div>
-
-<div style="text-align: center; margin-top: 20px; border-top: 1px dashed #cbd5e1; padding-top: 15px;">
-    <p style="font-size: 13px; color: #475569; font-weight: 600;">
-        ¿No abren los botones? Da clic aquí: 
-        <a href="https://wa.me/524464044521" target="_blank" style="color: #25d366; text-decoration: underline;">wa.me/524464044521</a>
-    </p>
-    <p style="font-size: 12px; color: #64748b; margin-top: 5px;">
-        O envía un mensaje directo al: <strong>446 404 4521</strong>
-    </p>
-</div>
-
-
-🟢 QUIERO INTERNET HOY
-</a>
-
-<div class="urgency">
-🔥 Promoción disponible por tiempo limitado
-</div><div class="counter">
-⏰ Agenda tu instalación por WhatsApp
-</div><div class="testimonials"><h2>⭐⭐⭐⭐⭐ Clientes satisfechos</h2><div class="review">
-Me ayudaron a contratar muy rápido después de mudarme.
-<strong>Cliente de Querétaro</strong>
-</div><div class="review">
-La instalación fue sencilla y la atención por WhatsApp fue excelente.
-<strong>Cliente de Corregidora</strong>
-</div><div class="review">
-Todo el proceso fue rápido y resolvieron mis dudas.
-<strong>Cliente de El Marqués</strong>
-</div></div><div class="trust"><h3>👨‍💼 Atención personalizada</h3><p>
-Asesoría para contratación de servicios Megacable.
-Verificación de cobertura, información de paquetes y seguimiento por WhatsApp.
-</p></div></div><div class="footer">
-Sitio informativo para promoción y contratación de servicios Megacable en Querétaro.
-</div></div><a
-class="whatsapp-float"
-href="https://wa.me/524464044521?text=Hola,%20quiero%20información%20sobre%20Megacable."
-target="_blank">
-💬
-</a>
+            <div class="backup-section">
+                <p style="font-weight: 600; margin-bottom: 4px;">
+                    ¿No abren los botones? Da clic aquí: 
+                    <a href="https://wa.me/524464044521" target="_blank" class="backup-link">wa.me/524464044521</a>
+                </p>
+                <p style="font-size: 12px; color: #cbd5e1;">
+                    O envía un mensaje directo al: <strong>446 404 4521</strong>
+                </p>
+            </div>
+            
+            <div class="footer-secure">
+                🔒 Tu solicitud será atendida por un asesor autorizado en tiempo real.
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>
