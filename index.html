@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contrata Internet en Querétaro - Fibra Óptica</title>
+    <title>Fibra Óptica Querétaro - Contrataciones Oficiales</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,7 +14,7 @@
         }
 
         body {
-            background: #070b19;
+            background: #060b18;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,126 +23,169 @@
         }
 
         .landing-container {
-            background: #001a4d; /* Azul Megacable Profundo para todo el fondo */
+            background: #001a4d; /* Azul Megacable Corporativo */
             width: 100%;
             max-width: 450px;
             min-height: 100vh;
-            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.7);
             display: flex;
             flex-direction: column;
             position: relative;
         }
 
-        /* Barra de Urgencia/Escasez (Gatillo Mental) */
+        /* Cintillo Institucional de Crecimiento */
+        .state-bar {
+            background: linear-gradient(90deg, #002157 0%, #003fa3 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 6px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #0056b3;
+        }
+
+        /* Alerta de Urgencia */
         .urgency-bar {
             background: #ffcc00; /* Oro Promocional */
             color: #001f66;
             text-align: center;
-            padding: 10px;
+            padding: 9px;
             font-size: 11px;
             font-weight: 800;
             letter-spacing: 0.5px;
+        }
+
+        /* Hero: Sentido de Pertenencia y Crecimiento */
+        .hero-section {
+            background: linear-gradient(180deg, #002d72 0%, #00153b 100%);
+            padding: 35px 24px 20px 24px;
+            text-align: center;
+            position: relative;
+        }
+
+        .official-badge {
+            background: rgba(46, 213, 115, 0.15);
+            color: #2ed573;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 12px;
+            border: 1px solid rgba(46, 213, 115, 0.3);
             text-transform: uppercase;
         }
 
-        /* Hero: Alivio al Dolor */
-        .hero-section {
-            background: linear-gradient(180deg, #002d72 0%, #001a4d 100%);
-            color: white;
-            padding: 40px 24px 25px 24px;
-            text-align: center;
-        }
-
-        .hero-badge {
-            background: rgba(0, 210, 255, 0.2);
-            color: #00d2ff;
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            display: inline-block;
-            margin-bottom: 15px;
-            border: 1px solid rgba(0, 210, 255, 0.4);
-        }
-
         .title {
-            font-size: 26px;
+            font-size: 25px;
             font-weight: 800;
             line-height: 1.2;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             letter-spacing: -0.5px;
-            color: #ffffff;
         }
 
         .subtitle {
-            font-size: 14px;
-            color: #93c5fd; /* Azul claro para legibilidad */
+            font-size: 13.5px;
+            color: #93c5fd;
             line-height: 1.5;
-            font-weight: 400;
         }
 
-        /* Cuerpo principal */
         .main-content {
-            padding: 20px 24px 40px 24px;
+            padding: 15px 20px 40px 20px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            background: #00153b; /* Interior del contenedor más oscuro para contraste */
+            background: #00153b;
         }
 
-        /* Tarjeta de Decisión llamativa con interior Azul */
+        /* CONTENEDOR VISUAL: Pantalla de TV y Streaming (Lo que le faltaba) */
+        .visual-product-box {
+            background: linear-gradient(135deg, #00225c 0%, #001130 100%);
+            border: 1px solid #0040a6;
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: inset 0 0 20px rgba(0,210,255,0.1);
+        }
+
+        .tv-graphic {
+            width: 70px;
+            height: 50px;
+            margin: 5px auto;
+            display: block;
+        }
+
+        .entertainment-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .ent-tag {
+            background: #002d72;
+            color: #00d2ff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 4px;
+            border: 1px solid #0052cc;
+        }
+
+        /* Tarjeta de Decisión Comercial */
         .decision-card {
-            background: #002561; /* Azul Megacable Eléctrico en el interior */
+            background: #002561;
             border: 2px solid #0052cc;
             border-radius: 24px;
-            padding: 28px 24px;
+            padding: 24px 20px;
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             position: relative;
-            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
         }
 
         .pop-badge {
-            background: #2ed573; /* Verde Éxito */
-            color: white;
-            font-size: 11px;
-            font-weight: 700;
-            padding: 6px 16px;
+            background: #ffcc00;
+            color: #001f66;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 5px 14px;
             border-radius: 50px;
             position: absolute;
-            top: -14px;
+            top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            box-shadow: 0px 4px 12px rgba(46, 213, 115, 0.4);
+            box-shadow: 0px 4px 12px rgba(255, 204, 0, 0.3);
         }
 
         .decision-card h2 {
-            font-size: 24px;
-            color: #ffffff;
+            font-size: 21px;
             font-weight: 800;
             text-align: center;
         }
 
         .price-tag {
             text-align: center;
-            margin: 15px 0;
+            margin: 10px 0;
         }
 
         .price-sub {
-            font-size: 12px;
+            font-size: 11px;
             color: #93c5fd;
             display: block;
-            margin-bottom: 4px;
         }
 
         .price-main {
-            color: #ffcc00; /* Destaca el precio en Oro */
-            font-size: 36px;
+            color: #ffcc00;
+            font-size: 34px;
             font-weight: 800;
         }
 
         .price-main span {
-            font-size: 16px;
+            font-size: 15px;
             color: #ffffff;
             font-weight: 400;
         }
@@ -150,17 +193,16 @@
         .divider {
             height: 1px;
             background: #003b99;
-            margin: 18px 0;
+            margin: 15px 0;
         }
 
-        /* Lista de beneficios orientados al cerebro reptiliano */
         .neuro-benefits {
             list-style: none;
         }
 
         .neuro-benefits li {
-            font-size: 14px;
-            margin-bottom: 14px;
+            font-size: 13px;
+            margin-bottom: 12px;
             color: #e2e8f0;
             display: flex;
             align-items: flex-start;
@@ -168,69 +210,52 @@
         }
 
         .neuro-benefits li strong {
-            color: #67e8f9; /* Azul cian eléctrico para resaltar textos clave */
+            color: #67e8f9;
         }
 
         .icon-check {
             color: #2ed573;
             font-weight: 900;
-            margin-right: 12px;
-            font-size: 16px;
+            margin-right: 10px;
+            font-size: 15px;
         }
 
-        /* CONTENEDOR DE BOTONES (NEUROMARKETING DE SELECCIÓN FÁCIL) */
+        /* Botones Magnéticos */
         .buttons-container {
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 14px;
         }
 
-        /* Estilo base para los botones magnéticos */
         .cta-button {
             color: white;
             text-decoration: none;
-            padding: 18px;
+            padding: 16px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 14px;
             text-align: center;
             display: block;
-            transition: all 0.3s ease;
-            animation: pulseWave 2.5s infinite;
+            transition: transform 0.2s ease;
         }
 
-        /* Botón 1: WhatsApp Express */
         .btn-whatsapp {
             background: #25d366;
-            box-shadow: 0px 8px 25px rgba(37, 211, 102, 0.35);
+            box-shadow: 0px 6px 20px rgba(37, 211, 102, 0.3);
         }
 
-        /* Botón 2: Visita Física */
         .btn-physical {
             background: #0052cc;
             border: 2px solid #0080ff;
-            box-shadow: 0px 8px 25px rgba(0, 82, 204, 0.4);
-            animation-delay: 0.6s;
-        }
-
-        @keyframes pulseWave {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.02);
-            }
-            100% {
-                transform: scale(1);
-            }
+            box-shadow: 0px 6px 20px rgba(0, 82, 204, 0.3);
         }
 
         .cta-button:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
-        /* Sección de respaldo antibloqueo */
+        /* Respaldo Antibloqueo */
         .backup-section {
             text-align: center;
             margin-top: 25px;
@@ -239,7 +264,7 @@
         }
 
         .backup-section p {
-            font-size: 13px;
+            font-size: 12.5px;
             color: #93c5fd;
         }
 
@@ -250,42 +275,61 @@
         }
 
         .footer-secure {
-            font-size: 11px;
+            font-size: 10px;
             color: #64748b;
             margin-top: 20px;
             text-align: center;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
     <div class="landing-container">
+        <div class="state-bar">
+            Conectividad que impulsa: Querétaro Crece 🏢
+        </div>
+
         <div class="urgency-bar">
-            ⚡ Instalaciones disponibles hoy en Querétaro y Corregidora
+            ⚡ Instalaciones prioritarias activas esta semana en tu zona
         </div>
 
         <section class="hero-section">
-            <span class="hero-badge">Trámite 100% Seguro</span>
-            <h1 class="title">¿Estrenando casa? No te quedes sin internet</h1>
-            <p class="subtitle">Conéctate hoy mismo con Fibra Óptica de alta velocidad, sin contratos aburridos ni filas eternas.</p>
+            <span class="official-badge">Asesoría Autorizada Megacable</span>
+            <h1 class="title">¿Mudándote? Llévate la mejor Fibra Óptica</h1>
+            <p class="subtitle">Asegura la conectividad de tu nuevo hogar hoy mismo. Trámite express y seguro para las familias de Querétaro.</p>
         </section>
 
         <main class="main-content">
+            
+            <div class="visual-product-box">
+                <svg class="tv-graphic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 3H3C1.89 3 1 3.89 1 5V17C1 18.11 1.89 19 3 19H8V21H16V19H21C22.1 19 23 18.11 23 17V5C23 3.89 22.1 3 21 3ZM21 17H3V5H21V17Z" fill="#00d2ff"/>
+                    <path d="M10 8L16 11L10 14V8Z" fill="#2ed573"/>
+                </svg>
+                <p style="font-size: 12px; font-weight: 600; color: #ffffff;">INTERNET DE ALTA VELOCIDAD + TV INTERACTIVA</p>
+                <div class="entertainment-badges">
+                    <span class="ent-tag">FIBRA SIMÉTRICA</span>
+                    <span class="ent-tag">HD PACK</span>
+                    <span class="ent-tag">XVIEW+</span>
+                </div>
+            </div>
+
             <div class="decision-card">
-                <span class="pop-badge">PROMOCIÓN EXCLUSIVA</span>
-                <h2>Paquete Alta Velocidad</h2>
+                <span class="pop-badge">EL FAVORITO DE LAS MUDANZAS</span>
+                <h2>Paquete Hogar Conectado</h2>
                 
                 <div class="price-tag">
-                    <span class="price-sub">Suscripción e instalación desde</span>
+                    <span class="price-sub">Contratación inmediata desde</span>
                     <span class="price-main">$100 <span>MXN</span></span>
                 </div>
                 
                 <div class="divider"></div>
                 
                 <ul class="neuro-benefits">
-                    <li><span class="icon-check">✓</span> <span><strong>Hasta 200 Megas:</strong> Navega, trabaja en home office y transmite películas sin cortes.</span></li>
-                    <li><span class="icon-check">✓</span> <span><strong>Fibra Óptica Directa:</strong> Máxima estabilidad garantizada en tu colonia.</span></li>
-                    <li><span class="icon-check">✓</span> <span><strong>Validación Express:</strong> Revisamos tus calles al instante sin perder tiempo.</span></li>
+                    <li><span class="icon-check">✓</span> <span><strong>Hasta 200 Megas:</strong> Home office, tareas y streaming en múltiples pantallas sin congelarse.</span></li>
+                    <li><span class="icon-check">✓</span> <span><strong>Televisión Digital Incluida:</strong> Los canales preferidos de la familia listos al instalar.</span></li>
+                    <li><span class="icon-check">✓</span> <span><strong>Cero Filas:</strong> Olvídate de perder tu día en el módulo. Validación express con tus calles.</span></li>
                 </ul>
             </div>
 
@@ -306,13 +350,13 @@
                     ¿No abren los botones? Da clic aquí: 
                     <a href="https://wa.me/524464044521" target="_blank" class="backup-link">wa.me/524464044521</a>
                 </p>
-                <p style="font-size: 12px; color: #cbd5e1;">
-                    O envía un mensaje directo al: <strong>446 404 4521</strong>
+                <p style="font-size: 11px; color: #cbd5e1;">
+                    O envía un mensaje directo al número: <strong>446 404 4521</strong>
                 </p>
             </div>
             
             <div class="footer-secure">
-                🔒 Tu solicitud será atendida por un asesor autorizado en tiempo real.
+                Distribuidor Autorizado Megacable. Atendiendo de manera formal el crecimiento digital de Querétaro y Corregidora.
             </div>
         </main>
     </div>
